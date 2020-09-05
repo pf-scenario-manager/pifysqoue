@@ -1,0 +1,244 @@
+  <!DOCTYPE html>
+<html>
+<title>AD Scenario Manager</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="HomePage-20181028-V1.css">
+<link href="https://fonts.googleapis.com/css?family=Niramit" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="./fontawesome-free-5.14.0-web/css/all.css" rel="stylesheet">
+<link rel="icon" type="image/png" href="./images/Gobelin.png" />
+<style>
+html,body,h1,h2,h3,h4,h5 {font-family: 'Niramit', sans-serif;}
+</style>
+	
+	
+<body class="w3-light-grey">
+
+<!-- Top container -->
+<div class="w3-bar w3-top w3-sombre w3-text-white w3-large" style="z-index:4">
+  <button class="w3-bar-item w3-button w3-hide-large w3-topbar w3-hover-none w3-hover-text-light-grey" onclick="w3_open();"><i class="fa fa-bars"></i></button>
+  <span class="w3-bar-item w3-left w3-topbar">AD Scenario Manager</span>
+  <div class="w3-bar-item w3-right">
+      <a href="#" class="w3-bar-item w3-button"><i class="far fa-bell"></i></a>
+	  <a href="#" class="w3-bar-item w3-button"><i class="far fa-comments"></i></a>
+      <a href="HomePage.html" class="w3-bar-item w3-button"><i class="fas fa-power-off"></i></a>
+      <img src="./images/avatarGirl.png" alt="Avatar" class="w3-circle w3-margin-right" style="width:46px">  
+      <span>Bienvenue, <strong>Aline</strong></span>
+      <a href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-caret-down"></i></a>
+  </div>
+</div>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-text-white w3-collapse w3-sombre w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  
+  <div class="w3-container">
+   <!-- <h5>Tableau de Bord</h5>-->
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" class="w3-bar-item w3-button w3-padding-16 w3-hide-large" onclick="w3_close()" title="close menu"><i class="fa fa-close fa-fw"></i>  Fermer le Menu</a>
+      <h5 class="w3-bar-item">Skull &amp; Shackles</h5>
+      <hr>
+    <a href="#" class="w3-bar-item w3-button w3-padding w3-sombre-actif"><i class="fas fa-home fa-fw"></i>  Accueil</a>
+      <hr>
+    <a href="CampaignDashboard-PJ.html" class="w3-bar-item w3-button w3-padding"><i class="far fa-address-card fa-fw"></i>  Personnages joueurs</a>
+      <hr>
+      <h6 class="w3-bar-item">Monde</h6>
+            <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fas fa-search-location fa-fw"></i>  Lieux</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fas fa-history fa-fw"></i>  Histoire</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fab fa-hubspot fa-fw"></i>  Organisations</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fab fa-grunt fa-fw"></i>  Races</a>
+      <hr>
+      <h6 class="w3-bar-item">Campagne</h6>
+            <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fas fa-neuter fa-fw"></i>  Quêtes</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fas fa-book fa-fw"></i>  Journal</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding"><i class="far fa-address-book fa-fw"></i>  Recueil PNJ et bestiaire</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fas fa-store-alt fa-fw"></i>  Boutique</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fas fa-route fa-fw"></i>  Cartes</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding"><i class="far fa-calendar-alt fa-fw"></i>  Calendrier</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fas fa-dice fa-fw"></i>  Rencontres</a>
+      
+      <hr>
+            <a href="#" class="w3-bar-item w3-button w3-padding"><i class="far fa-sticky-note fa-fw"></i>  Notes</a>
+      
+      <hr>
+            <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fas fa-cogs fa-fw"></i>  Paramètres</a>
+      <br style="margin-bottom: 55px">
+  </div> 
+</nav>
+
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+	
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px;margin-top:43px;">
+
+  <!-- Scenario widget -->
+   <div class="w3-row-padding w3-margin-bottom" style="margin-bottom: 30px">
+     <header class="w3-container w3-margin-bottom" style="margin-bottom: 30px">
+     </header>
+  </div> 
+
+  <div class="w3-row-padding w3-margin-bottom w3-padding-bottom">
+     <div class="w3-twothird">
+        <div class="w3-container w3-clair w3-text-white">
+           <h5 ><b><i class="fas fa-globe"></i>   Skull &amp; Shackles</b></h5>
+           <hr>
+           
+            <h6>Prêts à l'abordage</h6>
+            <p> Bienvenue dans la campagne de Skull &amp; Shackles, qui met la piraterie à l’honneur et où butin et infamie règnent en maîtres sur les mers de Golarion !<br>
+
+Les Capitaines libres des Chaînes menacent depuis longtemps les couloirs de navigation de l’océan Arcadien, au large de la côte ouest du Garund, inspirant la terreur aux capitaines des navires marchands de toute la mer Intérieure. Mais alors que d’intrépides héros se font capturer à Port-Péril, l’ombre d’une nation rivale des Capitaines libres s’étend sur les Chaînes.</p>
+                
+            <hr>
+        </div>
+      </div>
+      
+      
+      <div class="w3-third">
+        <div class="w3-container w3-clair w3-text-white">
+           <h5 class="w3-text-white"><b><i class="far fa-file-alt"></i>   Infos</b></h5>
+           <hr>
+                <p> <strong>Propriétaire de la campagne : </strong>Aline Declercq</p>
+                <p> <strong>Système de jeu : </strong>Pathfinder V1</p>
+                <p> <strong>Créé le : </strong>02 septembre 2020</p>
+                <p> <strong>Membres : </strong>6</p>
+                <p> <strong>Statut : </strong>Actif</p>
+                <p> <strong>Visibilité : </strong>Privé</p>
+                <p> <strong>Langue : </strong>Français</p>
+            <hr>
+
+        </div>
+      </div>
+
+      
+      <div class="w3-twothird w3-margin-top">
+        <div class="w3-container w3-clair w3-text-white">
+           <h5 class="w3-text-white"><b><i class="far fa-calendar-alt"></i>   Prochains événements</b></h5>
+           <hr>
+                 <table class="w3-table w3-banded-rows w3-text-white">
+                            <tr style="font-size: 16px">
+                                    <td><strong></strong></td>
+                                    <td><strong>Date</strong></td>
+                                    <td><strong>Evénement</strong></td>
+                                    <td><strong>Ma participation</strong> </td>
+                            </tr>
+                            <tr>
+                                    <td><i class="far fa-calendar w3-large"></i></td>
+                                    <td>30 septembre 2020</td>
+                                    <td>A l'abordage du Promesse de l'homme</td>
+                                    <td class="w3-text-green" style="text-shadow:0px 0px 10px #000000">OUI</td>
+                            </tr>
+                            <tr>
+                                    <td><i class="far fa-calendar w3-large"></i></td>
+                                    <td>30 octobre 2020</td>
+                                    <td>La conquête du Rocher de la Marée</td>
+                                    <td class="w3-text-green" style="text-shadow:0px 0px 10px #000000">OUI</td>
+                            </tr>
+                              <tr>
+                                    <td><i class="far fa-calendar w3-large"></i></td>
+                                    <td>30 novembre 2020</td>
+                                    <td>Les Capitaines Libres</td>
+                                    <td class="w3-text-red" style="text-shadow:0px 0px 10px #000000">NON</td>
+                              </tr>
+                             
+                    </table>   
+            
+            
+            
+            
+            
+            
+            <hr>
+
+        </div>
+      </div>
+      
+      
+      <div class="w3-third w3-margin-top">
+        <div class="w3-container w3-clair w3-text-white">
+           <h5 class="w3-text-white"><b><i class="fas fa-user"></i>   Joueurs</b></h5>
+           <hr>
+                
+             <table class="w3-table w3-banded-rows w3-text-white">
+
+                            <tr>
+                                    <td><i class="fas fa-female w3-large"></i></td>
+                                    <td>Aline Declercq</td>
+                                    <td><i class="fas fa-check-circle w3-text-green w3-large" style="text-shadow:0px 0px 10px #000000"></i></td>
+                            </tr>
+                            <tr>
+                                    <td><i class="fas fa-male w3-large"></i></td>
+                                    <td>David Peeters</td>
+                                    <td><i class="fas fa-check-circle w3-text-green w3-large" style="text-shadow:0px 0px 10px #000000"></i></td>
+                            </tr>
+                              <tr>
+                                    <td><i class="fas fa-male w3-large"></i></td>
+                                    <td>Lionel Peeters</td>
+                                    <td><i class="fas fa-times-circle w3-text-red w3-large" style="text-shadow:0px 0px 10px #000000"></i></td>
+                              </tr>
+                              <tr>
+                                    <td><i class="fas fa-male w3-large"></i></td>
+                                    <td>Thibault Peeters</td>
+                                    <td><i class="fas fa-times-circle w3-text-red w3-large" style="text-shadow:0px 0px 10px #000000"></i></td>
+                              </tr>
+                              <tr>
+                                    <td><i class="fas fa-female w3-large"></i></td>
+                                    <td>Lydie Servotte</td>
+                                    <td><i class="fas fa-check-circle w3-text-green w3-large" style="text-shadow:0px 0px 10px #000000"></i></td>
+                            </tr>
+                            <tr>
+                                    <td><i class="fas fa-male w3-large"></i></td>
+                                    <td>Christophe Masson</td>
+                                    <td><i class="fas fa-check-circle w3-text-green w3-large" style="text-shadow:0px 0px 10px #000000"></i></td>
+                            </tr>
+                             
+                    </table> 
+            
+            
+            <hr>
+
+        </div>
+      </div>
+  </div>      
+      
+
+
+
+
+
+
+
+
+  <!-- End page content -->
+</div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+    if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+        overlayBg.style.display = "none";
+    } else {
+        mySidebar.style.display = 'block';
+        overlayBg.style.display = "block";
+    }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+    overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+</html>
